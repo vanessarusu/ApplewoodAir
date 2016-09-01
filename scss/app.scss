@@ -1,0 +1,232 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+// @include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+
+
+
+// ------------------------------------------------------------
+
+
+@import 'applewood-config';
+@import 'applewood-fonts';
+@import 'header';
+@import 'applewood-slider';
+@import 'experts';
+@import 'testimonial-slider';
+@import 'tips-and-tricks';
+@import 'humble-beginnings';
+
+.button {
+    padding: 0.65em 1em;
+}
+
+.button-red {
+    background-color: $applewood-red;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1), inset 0px 0px 6px 0px rgba(255,255,255,0.1);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1), inset 0px 0px 6px 0px rgba(255,255,255,0.1);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1), inset 0px 0px 6px 0px rgba(255,255,255,0.1);
+    border-radius: 3px;
+    margin-top: -12px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $applewood-title;
+    font-weight: bold;
+}
+
+.test {
+    background-color: red;
+    padding-top: 50px;
+}
+
+#socialFeeds {
+    padding: 50px 0;
+    background-color: $applewood-offwhite;
+    h3 {
+        color: $applewood-blue;
+        font-size: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #EBEBEB;
+    }
+}
+.facebook-container {
+    text-align: center;
+}
+.facebook-container, .twitter-container {
+    padding-top: 40px;
+}
+
+#contactFooter {
+    .contactContainer {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding-bottom: 50px;
+    }
+    background-color: $applewood-blue;
+    padding: 50px 0;
+    color: #fff;
+    h4 {
+        font-size: 26px;
+        margin: 0 auto;
+    }
+    h5 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-family: $applewood-title;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0;
+        margin-top: -5px;
+    }
+    a {
+        color: #fff;
+        font-family: $applewood-title;
+        font-weight: bold;
+        i {
+            font-size: 28px;
+            margin-right: 10px;
+            
+        }
+    }
+    button {
+        font-family: $applewood-title;
+        font-weight: bold;
+        color: #fff;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .contactFooter-right {
+        text-align: right;
+    }
+    .locations {
+        padding: 30px 0;
+        p {
+            font-family: $applewood-title;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+    #locationMenu li {
+        list-style: none;
+        float: left;
+        margin: 0 10px 0 5px;
+        position: relative;
+        font-family: $applewood-body;
+        font-size: 17px;
+        &:after {
+            content: '-';
+            position: absolute;
+            right: -10px;
+            opacity: 0.4;
+
+        }
+        &:last-child:after {
+            content: '';
+        }
+    }
+}
+
+#footer {
+        background-color: $applewood-lightblue;
+        padding: 30px 0;
+        a {
+            color: #fff;
+            font-family: $applewood-title;
+        }
+        ul {
+            margin: 0;
+            li {
+                list-style: none;
+                &:first-child a {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+        .footerMenu {
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        #copyright {
+            padding: 30px 0;
+            color: rgba(0,0,0,0.3);
+            li {
+                list-style: none;
+                float: left;
+                margin: 0 10px 0 5px;
+                position: relative;
+                font-family: $applewood-body;
+                font-size: 13px;
+                a {
+                    font-weight: bold;
+                    font-family: $applewood-body;
+                    font-size: 13px;
+                    color: rgba(0,0,0,0.3)
+                }
+        &:after {
+            content: '|';
+            position: absolute;
+            right: -10px;
+            opacity: 0.4;
+
+        }
+        &:last-child:after {
+            content: '';
+            }
+        }
+    }
+}
+

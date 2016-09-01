@@ -1,0 +1,32 @@
+#experts h3 {
+    color: $applewood-red;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding: 70px 0 35px 0;
+}
+
+#sellingPoints {
+    padding: 50px 0;
+    text-align: center;
+    img {
+        max-height: 90px;
+        margin: 0 auto; 
+    }
+    .sellingPointTitle {
+        font-family: $applewood-title;
+        font-weight: bold;
+        font-size: 30px;
+        color: $applewood-blue;
+        padding: 20px 0 10px;
+        margin-bottom: 0;
+    }
+    .sellingPointCopy {
+        color: $applewood-darkgrey;
+        font-family: $applewood-body;
+        font-size: 17px;
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+
+}

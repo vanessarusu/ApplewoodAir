@@ -1,0 +1,33 @@
+
+// COLOURS ---------------------------------------
+
+$applewood-blue: #224D8C;
+$applewood-lightblue: #3C89B7;
+$applewood-red: #C42946;
+$applewood-offwhite: #F7F7F7;
+$applewood-darkgrey: #4D4D4D;
+$applewood-lightgrey: #CCCCCC;
+
+
+// TYPOGRAPHY ------------------------------------
+
+$applewood-title: 'Titillium Web', sans-serif;
+$applewood-body: 'Hind', sans-serif;
+
+// HELPERS ---------------------------------------
+
+// .expanded-bg {
+//   max-width: 75rem;
+//   margin: 0 auto;
+// }
+
+.menu>li>a {
+    padding: 0;
+}
+
+
+// FALLBACKS -------------------------------------
+
+.no-background-blend-mode {
+	background: #19467C;
+}

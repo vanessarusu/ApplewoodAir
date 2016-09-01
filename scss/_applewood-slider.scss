@@ -1,0 +1,81 @@
+#my-slider {
+    position: relative;
+}
+
+.sp-thumbnails-container {
+    position: absolute;
+    background-color: rgba(34,77,140,0.85);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background-color: purple;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sp-thumbnails {
+    // max-width: 75rem;
+    margin: 0 auto;
+}
+
+.sp-thumbnail {
+    margin: 7px 0 0 15px;
+    color: #fff;
+    font-family: $applewood-title;
+    font-weight: bold;
+    line-height: 55px;
+    font-size: 22px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+    &:before {
+            position: absolute;
+            top: 0;
+            right:1px;
+            content: '';
+            height: 100%;
+            width: 2px;
+            border-right: 1px solid rgba(0,0,0,0.12);
+        }
+}
+.sp-selected-thumbnail {
+    background-color: $applewood-red;
+}
+
+.slider-overlay-container {
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    
+    div {
+        background-color: rgba(34,77,140,0.85);
+        padding: 30px 35px;
+        float: left;
+        color: #fff;
+        h3 {
+            font-size: 50px;
+            font-family: $applewood-title;
+            font-weight: bold;
+            margin-bottom: -8px;
+        }
+        .subtitle {
+            font-size: 25px;
+            font-family: $applewood-title;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        .slider-copy {
+            font-family: $applewood-body;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 24px;
+            padding-bottom: 18px;
+            max-width: 450px;
+        }
+    }
+    button {
+        font-family: $applewood-title;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

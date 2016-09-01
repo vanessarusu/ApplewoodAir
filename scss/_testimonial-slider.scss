@@ -1,0 +1,93 @@
+#homeTestimonial {
+    background: url(../images/open-quote.svg) 10px -10px no-repeat, $applewood-offwhite;
+    background-size: 90px auto;
+    border: 1px solid #EBEBEB;
+    -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.08);
+    box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.08);
+    position: relative;
+    margin-bottom: 70px;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 75px;
+        width: 90px;
+        bottom: 0px;
+        right: 0;
+        background: url(../images/close-quote.svg) 0px 10px no-repeat;
+        background-size: contain;
+    }
+    #readMore {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        z-index: 10;
+        a {
+            font-family: $applewood-title;
+            font-weight: bold;
+            color: $applewood-lightgrey;
+            font-size: 15px;
+        }
+    }
+}
+
+#testimonialSlider {
+    text-align: center;
+    .testimonialTitle {
+        font-family: $applewood-title;
+        color: $applewood-red;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .testimonialBody {
+        font-family: $applewood-body;
+        color: $applewood-darkgrey;
+        font-size: 20px;
+        line-height: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .testimonialAuthor {
+        font-family: $applewood-body;
+        font-weight: bold;
+        color: $applewood-blue;
+        font-size: 17px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    .sp-arrow {
+        height: 40px;
+        width: 40px;
+        background-color: $applewood-red;
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.08);
+        -moz-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.08);
+        box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.08);
+    }
+    .sp-previous-arrow:before, .sp-next-arrow:before {
+        top: 25%;
+    }
+    .sp-next-arrow:before, .sp-previous-arrow:before,
+    .sp-next-arrow:after, .sp-previous-arrow:after {
+        left: 40%;
+        width: 5px;
+        height: 25%;
+    }
+    .sp-next-arrow:before, .sp-next-arrow:after {
+        left: 45%;
+    }
+    .sp-previous-arrow {
+        left: -20px !important;
+    }
+    .sp-next-arrow {
+        right: -20px !important;
+    }
+}
+
+
+
+
+
+
+
+

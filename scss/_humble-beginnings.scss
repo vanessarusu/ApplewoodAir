@@ -1,0 +1,33 @@
+#humbleBeginnings {
+    background-color: $applewood-offwhite;
+    padding: 50px 0;
+    h2 {
+        color: $applewood-red;
+        font-size: 50px;
+    }
+    .humbleSubtitle {
+        font-family: $applewood-title;
+        font-weight: bold;
+        color: $applewood-lightblue;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .humbleCopy {
+        font-family: $applewood-body;
+        color: $applewood-darkgrey;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    img {
+        width: 100%;
+    }
+    button {
+        margin-top: 20px;
+
+            font-family: $applewood-title;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+
+    }
+}
