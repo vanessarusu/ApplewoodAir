@@ -8,31 +8,46 @@
     max-width: 315px;
 }
 
-#socialNav {
-    padding: 0 0 0 1.875rem;
-    li i {
-        font-size: 24px;
-        margin-left: 10px;
-        color: #fff;
-    }
+#mobileSocialNav {
+    display: none;
 }
 
 #headerContact {
     padding-top: 30px;
     color: #fff;
     #socialNav {
-        padding: auto 0 !important;
+        padding: 0 0 0 1.875rem;
+    .menu {
+        float: right;
     }
+    li i {
+        font-size: 24px;
+        margin-left: 10px;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: $applewood-lightblue;
+        }
+    }
+    .phone {
+        padding: 0 20px 0 10px;
+            &:hover {
+                color: $applewood-lightblue;
+            }
+        }
+    }
+
     a {
         color: #fff;
-    }
-    .phone i {
-        font-size: 24px;
+        &:hover {
+            color: $applewood-lightblue;
+        }
     }
     span, .button-red {
             font-family: $applewood-title;
             font-weight: bold;
             font-size: 20px;
+            // margin-right: 10px;
         }
 }
 
@@ -68,12 +83,10 @@
     }
 
     li {
-        list-style: none;
-        line-height: 55px;
         border-left: 1px solid rgba(0,0,0,0.12);
         text-align: center;
         position: relative;
-        flex-grow: 1;
+        padding: 20px 0;
         transition: background-color 0.2s ease-out;
         &:before {
             position: absolute;
@@ -101,4 +114,64 @@
         }
 
     }
+    .menu.expanded {
+        table-layout: auto;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    #headerContact {
+        display: none;
+    }
+
+    #mobileSocialNav {
+        display: block;
+        ul li {
+            i {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+        a {
+            color: #fff;
+            font-family: $applewood-title;
+            font-weight: bold;
+        }
+    }
+    .logo {
+        text-align: center;
+    }
+    
+}
+
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #header {
+        padding-bottom: 10px;
+    }
+    #headerContact .button-red {
+        margin-left: 40px;
+        margin-top: 8px;
+    }
+    #headerContact {
+        justify-content: flex-end;
+    }
+    #headerContact span {
+        margin-right: 0;
+    }
+
+    #headerContact #socialNav {
+        padding: 0 !important;
+        .phone {
+            padding: 0;
+        }
+    }
+    #header {
+        padding-top: 0;
+    }
+
+    .logo {
+        padding-top: 20px;
+    }
+
 }

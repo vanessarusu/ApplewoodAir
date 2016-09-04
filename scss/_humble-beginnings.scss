@@ -31,3 +31,16 @@
 
     }
 }
+
+@media screen and (max-width: 63.9375em) {
+    #humbleBeginnings {
+        h2 {
+            font-size: 36px;
+            line-height: 38px;
+        }
+        img {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+    }
+}

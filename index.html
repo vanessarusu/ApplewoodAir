@@ -10,14 +10,42 @@
 
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Hind:300,700" rel="stylesheet">
-        <script src="https://use.fontawesome.com/738991bb1c.js"></script>
-        <link rel="stylesheet" href="bower_components/slider-pro/dist/css/slider-pro.min.css"/>
 
-
+        <!-- CSS -->
         <link rel="stylesheet" href="css/app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     </head>
     <body>
 
+
+<!-- START OFF CANVAS OPENING TAGS -->
+
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+                    <!-- Close button -->
+                    <button class="close-button" aria-label="Close menu" type="button" data-close>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                        <!-- Menu -->
+                    <ul class="vertical menu">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Builders &amp; Commercial</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Tips &amp; Resources</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                 </div>
+                <div class="off-canvas-content" data-off-canvas-content>
+
+<!-- END OFF CANVAS OPENING TAGS -->
+
+
+<!-- START FACEBOOK FEED CALL -->
 
     <div id="fb-root"></div>
 <div id="fb-root"></div>
@@ -29,42 +57,82 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<!-- END FACEBOOK FEED CALL -->
+
+<!-- START MOBILE OFF CANVAS NAV -->
 
 
-        <header id="header">
+        <div class="title-bar">
+  <div class="title-bar-left">
+    <button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+    <span class="title-bar-title"></span>
+  </div>
+  <div class="title-bar-right">
+      <div>
+          <nav id="mobileSocialNav">
+                <ul class="menu">
+                    <li>
+                    <a href="#"><i class="icon-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                    <a href="#"><i class="icon-facebook2" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                    </li>
+                    <li class="phone">
+                    <a href="#"><i class="icon-phone" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="button button-red">
+                    <a href="#"></i>
+                <span>Emergency Service</span></a>
+                    </li>
+                </ul>
+            </nav>
+      </div>
+  </div>
+</div>
+
+<!-- END MOBILE OFF CANVAS NAV -->
+
+<!-- START HEADER -->
+<!-- <div id="fouc"></div> -->
+
+    <header id="header">
         <div class="row">
             <div class="expanded-bg column">
-                <div class="row align-justify">
-                    <div class="logo large-4 columns">
+                <div class="row">
+                    <div class="logo medium-5 large-4 columns">
                         <img src="images/applewood-logo.png" onerror="this.src='images/applewood-logo.png'" alt="Applewood Air Conditioning">
                     </div>
-                    <div class="large-6 columns">
+                    <div class=" small-12 medium-7 columns">
                         <div id="headerContact" class="row">
-                            <nav id="socialNav" class="shrink column">
+                            <nav id="socialNav" class="large-7 columns">
                                 <ul class="menu">
                                     <li>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="icon-twitter" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="icon-facebook2" aria-hidden="true"></i></a>
                                     </li>
                                     <li>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="icon-instagram"></i></a>
+                                    </li>
+                                    <li class="phone">
+                                    <a href="#"><i class="icon-phone" aria-hidden="true"></i>
+                                <span>(905) 275-4500</span></a>
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="shrink column text-center phone">
-                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
-                                <span>(905) 275-4500</span></a>
-                            </div>
-                            <button class="button button-red align-right column">Get Emergency Service</button>
+                            <button class="button button-red medium-10 large-5 columns">Get Emergency Service</button>
                         </div>
                     </div>
                 </div>   
             </div>
-            </div>
-            <nav id="mainNav">
-                <ul class="row">
+        </div>
+        <nav id="mainNav">
+            <div class="row">
+                <ul class="expanded menu">
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Builders &amp; Commercial</a></li>
@@ -73,125 +141,103 @@
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
             
             
         </header>
 
+<!-- END HEADER -->
 
-        <section id="slider">
-            <div class="slider-pro" id="my-slider">
-                <div class="sp-slides">
-                    <!-- Slide 1 -->
-                    <div class="sp-slide">
-                        <img class="sp-image" src="images/11686353.jpg"/>
-                        <div class="sp-layer" data-width="100%" data-vertical="80px">
-                            <div class="slider-overlay-container">
-                                <div>
-                                    <h3>Get Ready for the Heat</h3>
-                                    <p class="subtitle">With Half Off Your Air Conditioner Tune Up</p>
-                                    <p class="slider-copy">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                                    </p>
-                                    <button class="button button-red">Learn more</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="sp-thumbnail">
-                            <p>Spring Promotion - Save on A/C</p>
-                        </div>
-                    </div>
 
-                    <!-- Slide 2 -->
-                    <div class="sp-slide">
-                        <img class="sp-image" src="images/11686353.jpg"/>
-                        <div class="sp-layer" data-width="100%" data-vertical="80px">
-                            <div class="slider-overlay-container">
-                                <div>
-                                    <h3>Get Ready for the Heat</h3>
-                                    <p class="subtitle">With Half Off Your Air Conditioner Tune Up</p>
-                                    <p class="slider-copy">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                                    </p>
-                                    <button class="button button-red">Learn more</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="sp-thumbnail">
-                            <p>Spring Promotion - Save on A/C</p>
-                        </div>
-                    </div>
+<!-- START SLIDER -->
 
-                    <!-- Slide 3 -->
-                    <div class="sp-slide">
-                        <img class="sp-image" src="images/11686353.jpg"/>
-                        <div class="sp-layer" data-width="100%" data-vertical="80px">
-                            <div class="slider-overlay-container">
-                                <div>
-                                    <h3>Get Ready for the Heat</h3>
-                                    <p class="subtitle">With Half Off Your Air Conditioner Tune Up</p>
-                                    <p class="slider-copy">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                                    </p>
-                                    <button class="button button-red">Learn more</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="sp-thumbnail">
-                            <p>Spring Promotion - Save on A/C</p>
-                        </div>
-                    </div>
 
-                    <div class="sp-slide">
-                        <img class="sp-image" src="images/11686353.jpg"/>
-                        <div class="sp-layer" data-width="100%" data-vertical="80px">
-                            <div class="slider-overlay-container">
-                                <div>
-                                    <h3>Get Ready for the Heat</h3>
-                                    <p class="subtitle">With Half Off Your Air Conditioner Tune Up</p>
-                                    <p class="slider-copy">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                                    </p>
-                                    <button class="button button-red">Learn more</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="sp-thumbnail">
-                            <p>Spring Promotion - Save on A/C</p>
-                        </div>
-                    </div>
+<section id="slider">
 
-                    
-                </div>
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+            <div class="orbit-arrow-container">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
             </div>
-        </section>
+        
+            <li class="is-active orbit-slide">
+                <img class="orbit-image" src="images/11686353.jpg" alt="Space">
+                <div class="slider-overlay-container">
+                    <h3>Get Ready for the Heat</h3>
+                    <p class="subtitle">With Half Off Your Air Conditioner Tune Up</p>
+                    <p class="slider-copy">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                    </p>
+                    <button class="button button-red">Learn more</button>
+                </div>
+            </li>
+            <li class="is-active orbit-slide">
+                <img class="orbit-image" src="images/11686353.jpg" alt="Space">
+                <div class="slider-overlay-container">
+                    <h3>Get Ready for the Heat</h3>
+                    <p class="subtitle">With Half Off Your Air Conditioner Tune Up</p>
+                    <p class="slider-copy">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                    </p>
+                    <button class="button button-red">Learn more</button>
+                </div>
+            </li>
+            <li class="is-active orbit-slide">
+                <img class="orbit-image" src="images/11686353.jpg" alt="Space">
+                <div class="slider-overlay-container">
+                    <h3>Get Ready for the Heat</h3>
+                    <p class="subtitle">With Half Off Your Air Conditioner Tune Up</p>
+                    <p class="slider-copy">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                    </p>
+                    <button class="button button-red">Learn more</button>
+                </div>
+            </li>
+        
+
+
+
+        </ul>
+        <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0">First slide details.</button>
+            <button data-slide="1">Second slide details.</button>
+            <button data-slide="2">Third slide details.</button>
+        </nav>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- END SLIDER -->
+
         <section id="experts">
             <div class="row">
-                <h3 class="small-12 columns">The GTA’s Heating &amp; Cooling Experts Since 1970</h3>
+                <h3 class="small-10 small-centered large-12 large-uncentered columns">The GTA’s Heating &amp; Cooling Experts Since 1970</h3>
             </div>
             
             <div id="sellingPoints" class="row">
-                <div class="small-12 medium-6 large-3 columns">
+                <div class="medium-6 large-3 columns">
                     <img src="images/applewood-heating.svg" onerror="this.src='images/applewood-heating.png'" alt="Applewood Heating">
                     <p class="sellingPointTitle">Heating</p>
                     <p class="sellingPointCopy">Lorem ipsum dolor sit amet, consectetuer elementum hendrerit adipiscing elit. Phasellus hendrerit.</p>
                 </div>
-                <div class="small-12 medium-6 large-3 columns">
+                <div class="medium-6 large-3 columns">
                     <img src="images/applewood-cooling.svg" onerror="this.src='images/applewood-cooling.png'" alt="Applewood Cooling">
                     <p class="sellingPointTitle">Cooling</p>
                     <p class="sellingPointCopy">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus.</p>
                 </div>
-                <div class="small-12 medium-6 large-3 columns">
+                <div class="medium-6 large-3 columns">
                     <img src="images/applewood-air-quality.svg" onerror="this.src='images/applewood-air-quality.png'" alt="Applewood Air Quality">
                     <p class="sellingPointTitle">Indoor Air Quality</p>
                     <p class="sellingPointCopy">Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. </p>
                 </div>
                 
-                <div class="small-12 medium-6 large-3 columns">
+                <div class="medium-6 large-3 columns">
                     <img src="images/applewood-fireplaces.svg" onerror="this.src='images/applewood-fireplaces.png'" alt="Applewood Fireplaces">
                     <p class="sellingPointTitle">Fireplaces</p>
                     <p class="sellingPointCopy">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero.</p>
@@ -200,52 +246,49 @@
         </section>
         <section id="homeTestimonial" class="row">
             <div class="slider-pro" id="testimonialSlider">
-                <div class="sp-slides">
-                <!-- Slide 1 -->
-                    <div class="sp-slide">
-                        <div class="sp-layer" data-width="100%" data-vertical="50px">
-                            <div>
-                                <p class="testimonialTitle">“Thank you so much for looking after us”</p>
-                                <p class="testimonialBody">The air conditioning is working great. Thank you so much for the filters and dropping them off so quickly. We appreciate how quickly and efficiently you took care of us in July and the follow up. We will recommend you to all our friends thanks again.</p>
-                                <p class="testimonialAuthor">
-                                    Gord and Lynn, Mississauga, ON
-                                </p>
-                            </div>
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                    <ul class="orbit-container">
+                       <div class="orbit-arrow-container">
+                            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                         </div>
-                    </div>
 
-                    <div class="sp-slide">
-                        <div class="sp-layer" data-width="100%" data-vertical="50px">
+                        <li class="is-active orbit-slide">
                             <div>
-                                <p class="testimonialTitle">“Thank you so musdafasdfch for looking after us”</p>
-                                <p class="testimonialBody">The air conditioning is working great. Thank you so much for the filters and dropping them off so quickly. We appreciate how quickly and efficiently you took care of us in July and the follow up. We will recommend you to all our friends thanks again.</p>
-                                <p class="testimonialAuthor">
+                                <p class="testimonialTitle small-9 small-centered columns">“Thank you so musdafasdfch for looking after us”</p>
+                                <p class="testimonialBody small-9 small-centered columns">The air conditioning is working great. Thank you so much for the filters and dropping them off so quickly. We appreciate how quickly and efficiently you took care of us in July and the follow up. We will recommend you to all our friends thanks again.</p>
+                                <p class="testimonialAuthor columns">
                                     Gord and Lynn, Mississauga, ON
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="sp-slide">
-                        <div class="sp-layer" data-width="100%" data-vertical="50px">
+                        </li>
+                        <li class="is-active orbit-slide">
                             <div>
-                                <p class="testimonialTitle">“Thank you so musdafasdfch for looking after us”</p>
-                                <p class="testimonialBody">The air conditioning is working great. Thank you so much for the filters and dropping them off so quickly. We appreciate how quickly and efficiently you took care of us in July and the follow up. We will recommend you to all our friends thanks again.</p>
-                                <p class="testimonialAuthor">
+                                <p class="testimonialTitle small-9 small-centered columns">“Thank you so musdafasdfch for looking after us”</p>
+                                <p class="testimonialBody small-9 small-centered columns">The air conditioning is working great. Thank you so much for the filters and dropping them off so quickly. We appreciate how quickly and efficiently you took care of us in July and the follow up. We will recommend you to all our friends thanks again.</p>
+                                <p class="testimonialAuthor columns">
                                     Gord and Lynn, Mississauga, ON
                                 </p>
                             </div>
-                        </div>
-                    </div>
-
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="readMore">
                 <a href="#">Read More Reviews</a>
             </div>
         </section>
+
+
+
         <section id="humbleBeginnings">
-            <div class="row align-justify">
-                <div class="large-7 columns">
+            <div class="row">
+
+            <div class="large-push-8 large-4 columns end">
+                    <img src="images/applewood-team.jpg" alt="Applewood Team">
+                </div>
+
+                <div class="large-7 large-pull-5 columns">
                     <h2>From Humble Beginnings</h2>
                     <p class="humbleSubtitle">
                         to Southern Ontario’s largest independent HVAC company, we’re still all about family.
@@ -253,18 +296,18 @@
                     <p class="humbleCopy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
                     <button class="button button-red">Meet the Team</button>
                 </div>
-                <div class="large-4 columns">
+                <!-- <div class="small-pull-7 large-4 columns end">
                     <img src="images/applewood-team.jpg" alt="Applewood Team">
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="tipsAndTricks">
-            <div class="row align-justify">
-                <div class="large-7 columns">
+            <div class="row">
+                <div class="large-8 columns">
                     <h2>Tips &amp; Tricks From the Team</h2>
                     <div id="tipsFeed">
-                        <div class="tipsPost row align-justify">
-                            <div class="expand column">
+                        <div class="tipsPost row">
+                            <div class="medium-8 columns">
 
                                 <p class="tipsDate">July 22, 2016</p>
                                 <h3 class="tipsTitle"><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></h3>
@@ -275,7 +318,7 @@
                                 </div>
                             </div>
 
-                            <div class="shrink column tipsImage">
+                            <div class="medium-4 columns tipsImage">
                                 <a href="#"><img src="images/tips-image-1.png" alt="Tips Image"></a>
                             </div>
 
@@ -371,14 +414,14 @@
 
         <section id="socialFeeds">
             <div class="row">
-                <div class="medium-9 columns">
+                <div class="medium-7 large-8 columns">
                     <h3>Facebook</h3>
                     <div class="facebook-container">
                         <div class="fb-page" data-href="https://www.facebook.com/applewoodairconditioning/" data-tabs="timeline" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/applewoodairconditioning/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/applewoodairconditioning/">Applewood  Air Conditioning  - Home Comfort Solution Provider -</a></blockquote></div>
                     </div>
                 </div>
 
-                <div class="medium-3 columns">
+                <div class="medium-5 large-4 columns">
                     <h3>Twitter</h3>
                     <div class="twitter-container">
                         <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/ApplewoodAirLTD">Tweets by ApplewoodAirLTD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -387,7 +430,7 @@
             </div>
         </section>
         <section id="contactFooter">
-            <div class="row align-justify contactContainer">
+            <div class="row contactContainer">
                 <div class="medium-6 columns">
                     <h4>Applewood Air Conditioning</h4>
                     <h5>3525 Hawkestone Road, Mississauga, Ontario L5C 2V1</h5>
@@ -404,7 +447,7 @@
                     <button class="button button-red">Get 24/7 Emergency Service</button>
                 </div>
             </div>
-            <div class="locations row align-middle">
+            <div class="locations row">
                 <div class="medium-2 columns"><p>Cities Served</p></div>
                 <div class="medium-10 columns">
                     <ul id="locationMenu">
@@ -430,13 +473,15 @@
                         <li>Woodbridge</li>
 
 
-                </ul></div>
+                </ul>
+                </div>
             </div>
             </div>
         </section>
         <footer id="footer">
-            <div class="row align-justify footerMenu">
-                    <ul class="shrink column">
+            <div class="row footerMenu">
+
+                <ul>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Heating Systems</a></li>
                     <li><a href="#">Cooling Systems</a></li>
@@ -446,28 +491,28 @@
                     <li><a href="#">WIFI Thermostats</a></li>
                     <li><a href="#">Product Geothermal</a></li>
                 </ul>
-                 <ul class="shrink column">
+                 <ul>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Emergency Service</a></li>
                     <li><a href="#">Maintenance Programs</a></li>
                     <li><a href="#">Maintenance Tips</a></li>
                 </ul>
-                <ul class="shrink column">
+                <ul>
                     <li><a href="#">Builders &amp; Commercial</a></li>
                 </ul>
-                <ul class="shrink column">
+                <ul>
                     <li><a href="#">Reviews</a></li>
                 </ul>
-                <ul class="shrink column">
+                <ul>
                     <li><a href="#">Tips &amp; Resources</a></li>
                     <li><a href="#">Category Example</a></li>
                     <li><a href="#">Category Example</a></li>
                     <li><a href="#">Category Example</a></li>
                 </ul>
-                <ul class="shrink column">
+                <ul>
                     <li><a href="#">About Us</a></li>
                 </ul>
-                <ul class="shrink column">
+                <ul>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 
@@ -485,27 +530,15 @@
 
 
 
-
-
-
-
-
-    
-
+        </div>
+    </div>
+  </div>
 
 
 
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/what-input/what-input.js"></script>
         <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-
-
-              <script src="bower_components/slider-pro/libs/js/jquery-1.11.0.min.js"></script>
-        <script src="bower_components/slider-pro/dist/js/jquery.sliderPro.js"></script>
-
-        <script type="text/javascript">
-
-        </script>
 
 
         <script src="js/app.js"></script>

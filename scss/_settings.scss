@@ -397,9 +397,10 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-size: 250px;
-$offcanvas-background: $light-gray;
+// $offcanvas-background: $light-gray;
+$offcanvas-background: none;
 $offcanvas-zindex: -1;
-$offcanvas-transition-length: 0.5s;
+$offcanvas-transition-length: 0.3s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
@@ -409,8 +410,10 @@ $maincontent-shadow: 0 0 10px rgba($black, 0.5);
 // 25. Orbit
 // ---------
 
-$orbit-bullet-background: $medium-gray;
-$orbit-bullet-background-active: $dark-gray;
+// $orbit-bullet-background: $medium-gray;
+$orbit-bullet-background: rgba(0,0,0,0);
+// $orbit-bullet-background-active: $dark-gray;
+$orbit-bullet-background-active: #C42946;
 $orbit-bullet-diameter: 1.2rem;
 $orbit-bullet-margin: 0.1rem;
 $orbit-bullet-margin-top: 0.8rem;

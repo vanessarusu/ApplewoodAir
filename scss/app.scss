@@ -5,8 +5,8 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-// @include foundation-grid;
-@include foundation-flex-grid;
+@include foundation-grid;
+// @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -44,7 +44,7 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-@include foundation-flex-classes;
+// @include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
@@ -65,6 +65,23 @@
 @import 'tips-and-tricks';
 @import 'humble-beginnings';
 
+.hidden{
+    display: none;
+}
+// #fouc {
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     height: 100vh;
+//     z-index: 500;
+//     opacity: 0.95;
+//     top:0;
+//     left:0;
+    
+//     z-index: 500;
+//     background: $applewood-blue;
+// }
+
 .button {
     padding: 0.65em 1em;
 }
@@ -76,6 +93,15 @@
     box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1), inset 0px 0px 6px 0px rgba(255,255,255,0.1);
     border-radius: 3px;
     margin-top: -12px;
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus {
+        background-color: $applewood-lightblue;
+    }
+
+}
+
+a {
+    transition: all 0.2s ease-in-out;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -128,7 +154,12 @@ h1,h2,h3,h4,h5,h6 {
         padding: 0;
         margin-top: -5px;
     }
-    a {
+        ul li {
+                display: -webkit-inline-box;
+                display: inline-box;
+                margin: 10px auto;
+            }
+        a {
         color: #fff;
         font-family: $applewood-title;
         font-weight: bold;
@@ -136,6 +167,9 @@ h1,h2,h3,h4,h5,h6 {
             font-size: 28px;
             margin-right: 10px;
             
+        }
+        &:hover {
+            color: $applewood-lightblue;
         }
     }
     button {
@@ -182,17 +216,20 @@ h1,h2,h3,h4,h5,h6 {
         a {
             color: #fff;
             font-family: $applewood-title;
+            &:hover {
+                color: $applewood-blue;
+            }
         }
         ul {
-            margin: 0;
+            // margin: 0;
             li {
                 list-style: none;
                 &:first-child a {
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: bold;
                 }
                 a {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }
@@ -229,4 +266,79 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 }
+
+.off-canvas-wrapper {
+    background-color: $applewood-blue;
+}
+.off-canvas li {
+    padding: 10px 0;
+    border-bottom: 1px solid $applewood-lightblue;
+    a {
+        font-family: $applewood-title;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
+.title-bar {
+    background-color: #222;
+    display: none;
+}
+
+.footerMenu ul {
+    float: left;
+    margin-right: 8px;
+    margin-right: 1.4vw;
+}
+
+
+
+
+@media screen and (max-width: 63.9375em) {
+    .title-bar {
+        display: block;
+    }
+
+    #mainNav {
+        display: none;
+    }
+    .facebook-container {
+        padding-bottom: 40px;
+    }
+
+    .twitter-container {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    #contactFooter {
+        .contactContainer {
+            text-align: center !important;
+            ul li {
+                display: -webkit-inline-box;
+                display: inline-box;
+                margin: 10px auto;
+            }
+            .contactFooter-right {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .footerMenu ul {
+        float: none;
+
+    }
+
+    #copyright {
+        text-align: center;
+    }
+
+
+}
+
+
 
